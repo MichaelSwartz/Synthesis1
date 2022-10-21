@@ -25,3 +25,7 @@ out/*
 hs_err_pid*
 replay_pid*
 /out/
+
+*.html
+*.js
+*.css
