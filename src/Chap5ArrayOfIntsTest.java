@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class Chap5ArrayOfIntsTest {
-    Random rand = new Random();
+    final Random rand = new Random();
 
     @Test
     void constructorAndDescription() {

@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Chap5Driver {
     public static void main(String[] args) {
-        // Call consctructor
+        // Call constructor
         Chap5ArrayOfInts hoursItsFeltLikeIveBeenWorkingOnThisAssignmentByDay = new Chap5ArrayOfInts("So many hours!", new int[]{1, 2, 3, 7, 100, 7000});
 
         hoursItsFeltLikeIveBeenWorkingOnThisAssignmentByDay.setDescription("So, so many hours!");

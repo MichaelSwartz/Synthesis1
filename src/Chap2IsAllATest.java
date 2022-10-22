@@ -45,6 +45,7 @@ class Chap2IsAllATest {
         puppyCounter += 1;
     }
 
+    @SuppressWarnings("SpellCheckingInspection")
     @Test
     void testPups() {
         IntStream range = IntStream.range(0, 200); // this is a non-primitive! stored on the heap

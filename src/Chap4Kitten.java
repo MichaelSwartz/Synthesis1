@@ -12,7 +12,7 @@ public class Chap4Kitten {
         return name;
     }
 
-    private String name; // dynamic var, specific to the instance
+    private final String name; // dynamic var, specific to the instance
 
     /**
      *  a constructor! it calls a helper
