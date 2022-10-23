@@ -11,6 +11,7 @@ public class Chap3Dog {
 
     /**
      * Constructor that calls the setWeightPounds to ensure that restrictions on weight cannot be bypassed.
+     *
      * @param date_of_birth
      * @param name
      * @param weightPounds

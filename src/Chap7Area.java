@@ -18,7 +18,6 @@ public class Chap7Area<GenericMember extends Chap7Entry> extends Chap7Entry {
      * @param parentArea can be null, or another area. I thought I was being quite clever with Generic that could be
      *                   itself, but I can't figure out what to do about the warning that the inner type is "a raw use
      *                   of parameterized type" -- even though the nested type doesn't matter at all
-     *
      */
     public Chap7Area(String name, Chap7Area<Chap7Area> parentArea) {
         super(name);

@@ -2,15 +2,16 @@ public class Chap7Route extends Chap7Climb {
     private final String grade;
     private final Chap7Area<Chap7Route> area;
 
-    @Override
-    public String getTypeDescription() {return "Route";}
-
-
     public Chap7Route(String name, String grade, Chap7Area<Chap7Route> area) {
         super(name);
         this.grade = grade;
         this.area = area;
         area.addToMemberEntries(this);
+    }
+
+    @Override
+    public String getTypeDescription() {
+        return "Route";
     }
 
     /**

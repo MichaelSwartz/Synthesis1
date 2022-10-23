@@ -1,13 +1,15 @@
 public class Chap7Boulder extends Chap7Climb {
     private final int grade;
 
-    @Override
-    public String getTypeDescription() {return "Boulder";}
-
     public Chap7Boulder(String name, int grade, Chap7Area<Chap7Boulder> area) {
         super(name);
         this.grade = grade;
         area.addToMemberEntries(this);
+    }
+
+    @Override
+    public String getTypeDescription() {
+        return "Boulder";
     }
 
     /**

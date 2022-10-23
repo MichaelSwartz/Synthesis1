@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 class Chap2IsAllATest {
+    byte puppyCounter = 0;
+
     @Test
     void testAllTheThings() {
 //        implicit casting, allowed because float is more precise than int
@@ -40,7 +42,6 @@ class Chap2IsAllATest {
 
     //        Ok let's show how that could be problematic, if we haven't already... let's say we have a method that counts
 //        every time we see a cute puppy, and a puppyCounter var that we increment in that method
-    byte puppyCounter = 0;
     void incrementPups() {
         puppyCounter += 1;
     }

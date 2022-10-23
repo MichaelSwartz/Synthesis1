@@ -8,6 +8,7 @@ public class Chap8ByWeight implements Chap8Item {
 
     /**
      * Getrer
+     *
      * @return weight
      */
     public float getWeight() {
@@ -16,6 +17,7 @@ public class Chap8ByWeight implements Chap8Item {
 
     /**
      * Setter
+     *
      * @param weight new val
      */
     public void setWeight(float weight) {
@@ -24,6 +26,7 @@ public class Chap8ByWeight implements Chap8Item {
 
     /**
      * Getter
+     *
      * @return pricePerWeight
      */
     public float getPricePerWeight() {
@@ -32,6 +35,7 @@ public class Chap8ByWeight implements Chap8Item {
 
     /**
      * Setter
+     *
      * @param pricePerWeight new value
      */
     public void setPricePerWeight(float pricePerWeight) {
@@ -40,6 +44,7 @@ public class Chap8ByWeight implements Chap8Item {
 
     /**
      * Getter
+     *
      * @return price from weight and pricePerWeight
      */
     @Override
@@ -49,6 +54,7 @@ public class Chap8ByWeight implements Chap8Item {
 
     /**
      * Getter
+     *
      * @return name
      */
     public String getName() {
@@ -57,6 +63,7 @@ public class Chap8ByWeight implements Chap8Item {
 
     /**
      * Setter
+     *
      * @param name - new name
      */
     public void setName(String name) {
