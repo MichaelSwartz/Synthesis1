@@ -66,6 +66,9 @@ public class Chap5ArrayOfInts {
      * @param other to divide by.
      */
     public void divide(int other) {
+        if (other == 0) {
+            throw new IllegalArgumentException("Cannot divide by 0");
+        }
         applyOperationToNumbers(((x,y) -> x / y), other);
     }
 }
