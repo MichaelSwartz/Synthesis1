@@ -10,6 +10,12 @@ public class Chap8ByRandomness implements Chap8Item {
     private float basePrice;
     private String name;
 
+    public Chap8ByRandomness(float weight, float basePrice, String name) {
+        this.weight = weight;
+        this.basePrice = basePrice;
+        this.name = name;
+    }
+
     /**
      * Getrer
      *
@@ -53,7 +59,7 @@ public class Chap8ByRandomness implements Chap8Item {
      */
     @Override
     public float getPrice() {
-        return weight * rand.nextFloat((float) .01, 100);
+        return basePrice * rand.nextFloat((float) .01, 100);
     }
 
     /**

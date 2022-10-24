@@ -1,13 +1,19 @@
 /**
- * Thie class represents items that are sold by weight
+ * This class represents items that are sold by weight
  */
 public class Chap8ByWeight implements Chap8Item {
     private float weight;
     private float pricePerWeight;
     private String name;
 
+    public Chap8ByWeight(float weight, float pricePerWeight, String name) {
+        this.weight = weight;
+        this.pricePerWeight = pricePerWeight;
+        this.name = name;
+    }
+
     /**
-     * Getrer
+     * Getter
      *
      * @return weight
      */

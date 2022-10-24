@@ -7,16 +7,27 @@ import java.util.Set;
  * A class to keep track of lists of students. Instances get an implicit ID via their insertion into the
  * static ArrayList "classes," with which a new class can be created
  */
-public class Chap9StudentLists {
-    static ArrayList<Chap9StudentLists> classes = new ArrayList<>(8);
+public class Chap9StudentList {
+    static ArrayList<Chap9StudentList> classes = new ArrayList<>(4);
     private final HashSet<String> students;
+
+    /**
+     * Getter
+     * @return index
+     */
+    public int getIndex() {
+        return index;
+    }
+
+    private final int index;
 
     /**
      * @param students
      */
-    public Chap9StudentLists(HashSet<String> students) {
+    public Chap9StudentList(HashSet<String> students) {
         this.students = students;
         classes.add(this);
+        index = classes.size() - 1;
     }
 
     /**
@@ -27,7 +38,7 @@ public class Chap9StudentLists {
      * @param studentsToRemove set of students to remove from existing class list
      * @throws InvalidParameterException if class at index id is not found
      */
-    public Chap9StudentLists(Integer id, Set<String> studentsToAdd, Set<String> studentsToRemove) throws InvalidParameterException {
+    public Chap9StudentList(Integer id, Set<String> studentsToAdd, Set<String> studentsToRemove) throws InvalidParameterException {
         try {
             students = new HashSet<>(classes.get(id).students);
         } catch (IndexOutOfBoundsException e) {
@@ -38,6 +49,7 @@ public class Chap9StudentLists {
         students.addAll(studentsToAdd);
 
         classes.add(this);
+        index = classes.size() - 1;
     }
 
     /**
@@ -49,4 +61,11 @@ public class Chap9StudentLists {
         return students;
     }
 
+    @Override
+    public String toString() {
+        return "Chap9StudentList{" +
+                "students=" + students +
+                ", index=" + index +
+                '}';
+    }
 }
