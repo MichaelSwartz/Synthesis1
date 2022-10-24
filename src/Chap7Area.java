@@ -5,11 +5,11 @@ import java.util.StringJoiner;
  * Area represents a place for climbing -- it can be a very large area, containing many nested sub-areas
  * Or it can be a single cliff or bouldering spot, containing a few Climbs (of subtype Boulder or Route)
  *
- * @param <GenericMember> Every area should contain children of just one type -- Area, Route, or Boulder
+ * @param <M> Every area should contain members of just one type -- Area, Route, or Boulder
  */
-public class Chap7Area<GenericMember extends Chap7Entry> extends Chap7Entry {
+public class Chap7Area<M extends Chap7Entry> extends Chap7Entry {
     private final Chap7Area<Chap7Area> superArea;  // enclosing area
-    private final ArrayList<GenericMember> memberEntries;
+    private final ArrayList<M> memberEntries;
 
     /**
      * Constructor
@@ -43,7 +43,7 @@ public class Chap7Area<GenericMember extends Chap7Entry> extends Chap7Entry {
     /**
      * @param newEntry to add to the members of the area
      */
-    public void addToMemberEntries(GenericMember newEntry) {
+    public void addToMemberEntries(M newEntry) {
         memberEntries.add(newEntry);
     }
 
@@ -66,7 +66,7 @@ public class Chap7Area<GenericMember extends Chap7Entry> extends Chap7Entry {
         description.add(""); // empty line
         description.add("Member " + getTypeDescription() + "s:");
 
-        for (GenericMember member : memberEntries) {
+        for (M member : memberEntries) {
             description.add(member.toString());
         }
 
