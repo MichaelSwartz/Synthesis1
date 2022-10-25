@@ -35,3 +35,5 @@ replay_pid*
 copy.svg
 element-list
 Synthesis1.iml
+/script-dir/
+.DS_Store
