@@ -16,30 +16,26 @@ class Chap6SafeIntArithmeticTest {
 
     @Test
     void add() {
-        Chap6SafeIntArithmetic math = new Chap6SafeIntArithmetic();
-        assertEquals(math.add("27", "5"), 32);
-        assertThrows(InvalidParameterException.class, () -> math.add("27", "otherStuff"));
+        assertEquals(Chap6SafeIntArithmetic.add("27", "5"), 32);
+        assertThrows(InvalidParameterException.class, () -> Chap6SafeIntArithmetic.add("27", "otherStuff"));
     }
 
     @Test
     void subtract() {
-        Chap6SafeIntArithmetic math = new Chap6SafeIntArithmetic();
-        assertEquals(math.subtract("27", "5"), 22);
-        assertThrows(InvalidParameterException.class, () -> math.subtract("27", "5.9898.8"));
+        assertEquals(Chap6SafeIntArithmetic.subtract("27", "5"), 22);
+        assertThrows(InvalidParameterException.class, () -> Chap6SafeIntArithmetic.subtract("27", "5.9898.8"));
     }
 
     @Test
     void multiply() {
-        Chap6SafeIntArithmetic math = new Chap6SafeIntArithmetic();
-        assertEquals(math.multiply("27", "5"), 135);
-        assertThrows(InvalidParameterException.class, () -> math.multiply("27dogs", "5.9898.8"));
+        assertEquals(Chap6SafeIntArithmetic.multiply("27", "5"), 135);
+        assertThrows(InvalidParameterException.class, () -> Chap6SafeIntArithmetic.multiply("27dogs", "5.9898.8"));
     }
 
     @Test
     void divide() {
-        Chap6SafeIntArithmetic math = new Chap6SafeIntArithmetic();
-        assertEquals(math.divide("27", "5"), 5);
-        assertThrows(InvalidParameterException.class, () -> math.divide("27", "5.9898.8"));
-        assertThrows(InvalidParameterException.class, () -> math.divide("27", "0"));
+        assertEquals(Chap6SafeIntArithmetic.divide("27", "5"), 5);
+        assertThrows(InvalidParameterException.class, () -> Chap6SafeIntArithmetic.divide("27", "5.9898.8"));
+        assertThrows(InvalidParameterException.class, () -> Chap6SafeIntArithmetic.divide("27", "0"));
     }
 }

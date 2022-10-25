@@ -7,6 +7,7 @@
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 
 public class Chap9Driver {
     /**
@@ -20,8 +21,8 @@ public class Chap9Driver {
         // make a second class from the members of the first -- but add Hamilton and remove Lafayette
         Chap9StudentList secondClass = new Chap9StudentList(
                 firstClass.getIndex(),
-                new HashSet<>(Arrays.asList("Hamilton")),
-                new HashSet<>(Arrays.asList("Lafayette"))
+                new HashSet<>(List.of("Hamilton")),
+                new HashSet<>(List.of("Lafayette"))
         );
 
         // make a third class from the members of the second, but remove the members shared with the first

@@ -24,7 +24,7 @@ public class Chap8ByRandomness implements Chap8Item {
     }
 
     /**
-     * Getrer
+     * Getter
      *
      * @return weight
      */

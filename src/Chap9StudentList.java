@@ -29,7 +29,8 @@ public class Chap9StudentList {
     private final int index;
 
     /**
-     * @param students
+     * Constructor
+     * @param students to include in student list
      */
     public Chap9StudentList(HashSet<String> students) {
         this.students = students;

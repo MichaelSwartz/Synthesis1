@@ -19,9 +19,9 @@ public class Chap3Dog {
     /**
      * Constructor that calls the setWeightPounds to ensure that restrictions on weight cannot be bypassed.
      *
-     * @param date_of_birth
-     * @param name
-     * @param weightPounds
+     * @param date_of_birth from being born!
+     * @param name Doggos get names
+     * @param weightPounds Dog's weight... in pounds
      */
     public Chap3Dog(Date date_of_birth, String name, int weightPounds) {
         this.dateOfBirth = date_of_birth;

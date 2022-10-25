@@ -16,7 +16,7 @@ public class Chap4Kitten {
     /**
      * a constructor! it calls a helper
      *
-     * @param name
+     * @param name Name the kitty something nice
      */
     public Chap4Kitten(String name) {
         this.name = cutifyName(name);
@@ -35,7 +35,7 @@ public class Chap4Kitten {
     /**
      * This is a static helper method!
      *
-     * @param name
+     * @param name Whatever you like
      * @return A cuter name
      */
     private static String cutifyName(String name) {
