@@ -6,6 +6,9 @@ import java.util.stream.IntStream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
+/**
+ * This test class is to show the different types of casting
+ */
 class Chap2IsAllATest {
     byte puppyCounter = 0;
 

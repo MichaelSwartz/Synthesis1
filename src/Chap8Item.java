@@ -1,5 +1,5 @@
 /**
- *
+ * Interface for items at our store
  */
 public interface Chap8Item {
     /**

@@ -1,4 +1,11 @@
+/**
+ * Driver for Chapter 8
+ */
 public class Chap8Driver {
+    /**
+     * The main event!
+     * @param args unused
+     */
     public static void main(String[] args) {
         // Our store needs some items to sell
         Chap8ByWeight strawberries = new Chap8ByWeight(10, 4, "Strawberries");

@@ -2,6 +2,9 @@ import org.junit.jupiter.api.Test;
 import java.security.InvalidParameterException;
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * A rad test class for our Arithmetic utility
+ */
 class Chap6SafeIntArithmeticTest {
 
     @Test

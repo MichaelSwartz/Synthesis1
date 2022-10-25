@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /**
- * Thie class represents items that are sold with an arbitrary price multiplied by a random value!
+ * This class represents items that are sold with an arbitrary price multiplied by a random value!
  */
 public class Chap8ByRandomness implements Chap8Item {
     final static Random rand = new Random();
