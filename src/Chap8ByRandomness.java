@@ -1,3 +1,10 @@
+/******
+ Name: Michael Swartz
+ Assignment: Synthesis 1
+ Date: 10/24/2022
+ ******/
+
+
 import java.util.Random;
 
 /**

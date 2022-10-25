@@ -1,3 +1,10 @@
+/******
+ Name: Michael Swartz
+ Assignment: Synthesis 1
+ Date: 10/24/2022
+ ******/
+
+
 public class Chap4Driver {
     /**
      * This is a driver method! When we run this file, Java looks for a method with this name and

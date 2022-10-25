@@ -1,3 +1,10 @@
+/******
+ Name: Michael Swartz
+ Assignment: Synthesis 1
+ Date: 10/24/2022
+ ******/
+
+
 public class Chap7Driver {
     public static void main(String[] args) {
 //        Create our top super-area

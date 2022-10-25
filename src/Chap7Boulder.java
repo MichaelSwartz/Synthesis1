@@ -1,3 +1,10 @@
+/******
+ Name: Michael Swartz
+ Assignment: Synthesis 1
+ Date: 10/24/2022
+ ******/
+
+
 /**
  * One subclass of Climb is Boulder -- a short climb typically done without a rope
  */
