@@ -29,3 +29,9 @@ replay_pid*
 *.html
 *.js
 *.css
+/legal/
+/resources/
+/resources/
+copy.svg
+element-list
+Synthesis1.iml
